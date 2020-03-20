@@ -3,7 +3,21 @@
 
 {%block content%}
 
-<h3> Indexx </h3>
+<div class="container">
+  <h2>Liquidacion sueldo</h2>
+  <form action="calcular_sueldo/" method="get">
+    <div class="form-group">
+      <label for="nominal">Salario nominal:</label>
+      <input type="number" class="form-control" id="nominal" placeholder="" name="nominal">
+    </div>
+    <div class="form-group">
+      <label for="extras">Horas extras:</label>
+      <input type="number" class="form-control" id="extras" placeholder="" name="extras">
+    </div>
+
+    <button type="submit" class="btn btn-default">Calcular</button>
+  </form>
+</div>
 
 
 {%endblock%}

@@ -1,0 +1,57 @@
+{% extends 'main.html' %}
+
+
+{%block content%}
+
+
+
+<div class="container">
+  <h2>Datos personales</h2>
+  <p></p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Documento</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{nombre}}</td>
+        <td>{{documento}}</td>
+
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h2>Empleo</h2>
+  <p></p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Contrato n°</th>
+        <th>Fecha de ingreso</th>
+        <th>Salario nominal</th>
+        <th>Valor hora</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{contrato}}</td>
+        <td>{{fecha}}</td>
+        <td>{{salario_nominal}}</td>
+        <td>{{valor_hora}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+
+{%endblock%}

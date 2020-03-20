@@ -11,19 +11,15 @@ class Usuario(models.Model):
 
 
 
-
-
-class Empresa(models.Model):
-
-    rut = models.IntegerField(primary_key=True)
-
-
-
-
-
 class Empleo(models.Model):
 
     contrato = models.IntegerField()
     fecha_ingreso = models.DateField()
     salario_nominal = models.IntegerField()
     valor_hora = models.DecimalField(decimal_places=2, max_digits=5)
+
+
+
+
+#class Recibo(models.Model):
+
